@@ -14,7 +14,7 @@
                     612
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8402431607246399,
+                "plate_confidence": 0.840252161026001,
                 "plate_bbox": [
                     269,
                     384,
@@ -47,7 +47,7 @@
                     390
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8424386382102966,
+                "plate_confidence": 0.8424213528633118,
                 "plate_bbox": [
                     112,
                     207,
@@ -73,7 +73,7 @@
                     424
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8385690450668335,
+                "plate_confidence": 0.8385584354400635,
                 "plate_bbox": [
                     144,
                     156,
@@ -83,10 +83,10 @@
                 "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\2_vehicle_2.jpg",
                 "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\2_vehicle_2_plate.jpg",
                 "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\2_vehicle_2_processed.jpg",
-                "plate_text": "XA028H7256",
+                "plate_text": "Unreadable",
                 "ocr_confidence": 38.81169234687956,
-                "status": "Readable",
-                "reason": null
+                "status": "Unreadable",
+                "reason": "OCR confidence was too low."
             },
             {
                 "vehicle_id": 3,
@@ -99,7 +99,7 @@
                     425
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8395714163780212,
+                "plate_confidence": 0.8395625948905945,
                 "plate_bbox": [
                     143,
                     157,
@@ -132,7 +132,7 @@
                     264
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8080149292945862,
+                "plate_confidence": 0.8080057501792908,
                 "plate_bbox": [
                     14,
                     20,
@@ -144,8 +144,8 @@
                 "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\3_vehicle_1_processed.jpg",
                 "plate_text": "Unreadable",
                 "ocr_confidence": 0,
-                "status": "Readable",
-                "reason": null
+                "status": "Unreadable",
+                "reason": "OCR confidence was too low."
             },
             {
                 "vehicle_id": 2,
@@ -158,7 +158,7 @@
                     254
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8100765347480774,
+                "plate_confidence": 0.8096974492073059,
                 "plate_bbox": [
                     13,
                     29,
@@ -170,8 +170,8 @@
                 "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\3_vehicle_2_processed.jpg",
                 "plate_text": "Unreadable",
                 "ocr_confidence": 0,
-                "status": "Readable",
-                "reason": null
+                "status": "Unreadable",
+                "reason": "OCR confidence was too low."
             },
             {
                 "vehicle_id": 3,
@@ -184,7 +184,7 @@
                     348
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8669759035110474,
+                "plate_confidence": 0.8669828772544861,
                 "plate_bbox": [
                     35,
                     65,
@@ -217,7 +217,7 @@
                     454
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.6584197282791138,
+                "plate_confidence": 0.6584010124206543,
                 "plate_bbox": [
                     0,
                     254,
@@ -229,8 +229,8 @@
                 "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\4_vehicle_1_processed.jpg",
                 "plate_text": "Unreadable",
                 "ocr_confidence": 0,
-                "status": "Readable",
-                "reason": null
+                "status": "Unreadable",
+                "reason": "OCR confidence was too low."
             },
             {
                 "vehicle_id": 2,
@@ -243,7 +243,7 @@
                     628
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8861061930656433,
+                "plate_confidence": 0.8860948085784912,
                 "plate_bbox": [
                     372,
                     274,
@@ -276,7 +276,7 @@
                     387
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8439686894416809,
+                "plate_confidence": 0.8439587950706482,
                 "plate_bbox": [
                     268,
                     114,
@@ -309,7 +309,7 @@
                     368
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8219154477119446,
+                "plate_confidence": 0.8219248652458191,
                 "plate_bbox": [
                     316,
                     120,
@@ -342,7 +342,7 @@
                     445
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8618665337562561,
+                "plate_confidence": 0.8618621826171875,
                 "plate_bbox": [
                     200,
                     115,
@@ -368,7 +368,7 @@
                     441
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8655310869216919,
+                "plate_confidence": 0.8655346632003784,
                 "plate_bbox": [
                     90,
                     128,
@@ -394,7 +394,7 @@
                     441
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8680778741836548,
+                "plate_confidence": 0.8680963516235352,
                 "plate_bbox": [
                     91,
                     129,
@@ -427,7 +427,7 @@
                     796
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.7447428107261658,
+                "plate_confidence": 0.744785726070404,
                 "plate_bbox": [
                     36,
                     169,
@@ -437,10 +437,10 @@
                 "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\8_vehicle_1.jpg",
                 "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\8_vehicle_1_plate.jpg",
                 "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\8_vehicle_1_processed.jpg",
-                "plate_text": "LU02UOE",
+                "plate_text": "Unreadable",
                 "ocr_confidence": 21.925694731432632,
-                "status": "Readable",
-                "reason": null
+                "status": "Unreadable",
+                "reason": "OCR confidence was too low."
             },
             {
                 "vehicle_id": 2,
@@ -453,7 +453,7 @@
                     808
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.90849769115448,
+                "plate_confidence": 0.9084650278091431,
                 "plate_bbox": [
                     65,
                     407,
@@ -479,7 +479,7 @@
                     857
                 ],
                 "plate_detected": true,
-                "plate_confidence": 0.8981673121452332,
+                "plate_confidence": 0.8981741666793823,
                 "plate_bbox": [
                     0,
                     371,
