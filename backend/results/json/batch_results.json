@@ -1,0 +1,500 @@
+[
+    {
+        "image": "1.png",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.7726778984069824,
+                "vehicle_bbox": [
+                    23,
+                    59,
+                    771,
+                    612
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8402431607246399,
+                "plate_bbox": [
+                    269,
+                    384,
+                    398,
+                    418
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\1_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\1_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\1_vehicle_1_processed.jpg",
+                "plate_text": "KA02KN18261",
+                "ocr_confidence": 45.71539349142573,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\1_anpr.jpg"
+    },
+    {
+        "image": "2.png",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.7740889191627502,
+                "vehicle_bbox": [
+                    75,
+                    87,
+                    467,
+                    390
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8424386382102966,
+                "plate_bbox": [
+                    112,
+                    207,
+                    222,
+                    236
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\2_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\2_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\2_vehicle_1_processed.jpg",
+                "plate_text": "KA02MH9095",
+                "ocr_confidence": 69.18539065901646,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 2,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.5377955436706543,
+                "vehicle_bbox": [
+                    501,
+                    50,
+                    867,
+                    424
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8385690450668335,
+                "plate_bbox": [
+                    144,
+                    156,
+                    246,
+                    194
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\2_vehicle_2.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\2_vehicle_2_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\2_vehicle_2_processed.jpg",
+                "plate_text": "XA028H7256",
+                "ocr_confidence": 38.81169234687956,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 3,
+                "vehicle_class": "truck",
+                "vehicle_confidence": 0.5036963820457458,
+                "vehicle_bbox": [
+                    501,
+                    50,
+                    866,
+                    425
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8395714163780212,
+                "plate_bbox": [
+                    143,
+                    157,
+                    247,
+                    194
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\2_vehicle_3.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\2_vehicle_3_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\2_vehicle_3_processed.jpg",
+                "plate_text": "X4024H7256",
+                "ocr_confidence": 44.06772408085536,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\2_anpr.jpg"
+    },
+    {
+        "image": "3.png",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.8925175070762634,
+                "vehicle_bbox": [
+                    28,
+                    208,
+                    158,
+                    264
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8080149292945862,
+                "plate_bbox": [
+                    14,
+                    20,
+                    34,
+                    27
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\3_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\3_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\3_vehicle_1_processed.jpg",
+                "plate_text": "Unreadable",
+                "ocr_confidence": 0,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 2,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.887500524520874,
+                "vehicle_bbox": [
+                    356,
+                    210,
+                    418,
+                    254
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8100765347480774,
+                "plate_bbox": [
+                    13,
+                    29,
+                    30,
+                    33
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\3_vehicle_2.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\3_vehicle_2_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\3_vehicle_2_processed.jpg",
+                "plate_text": "Unreadable",
+                "ocr_confidence": 0,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 3,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.8312172293663025,
+                "vehicle_bbox": [
+                    160,
+                    203,
+                    369,
+                    348
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8669759035110474,
+                "plate_bbox": [
+                    35,
+                    65,
+                    81,
+                    78
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\3_vehicle_3.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\3_vehicle_3_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\3_vehicle_3_processed.jpg",
+                "plate_text": "ML6OLXB",
+                "ocr_confidence": 58.28039153027787,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\3_anpr.jpg"
+    },
+    {
+        "image": "4.jpg",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.8984378576278687,
+                "vehicle_bbox": [
+                    730,
+                    31,
+                    1023,
+                    454
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.6584197282791138,
+                "plate_bbox": [
+                    0,
+                    254,
+                    9,
+                    324
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\4_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\4_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\4_vehicle_1_processed.jpg",
+                "plate_text": "Unreadable",
+                "ocr_confidence": 0,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 2,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.7232120633125305,
+                "vehicle_bbox": [
+                    127,
+                    18,
+                    996,
+                    628
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8861061930656433,
+                "plate_bbox": [
+                    372,
+                    274,
+                    615,
+                    364
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\4_vehicle_2.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\4_vehicle_2_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\4_vehicle_2_processed.jpg",
+                "plate_text": "OD8800",
+                "ocr_confidence": 89.28824417335532,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\4_anpr.jpg"
+    },
+    {
+        "image": "5.jpg",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.8970895409584045,
+                "vehicle_bbox": [
+                    200,
+                    100,
+                    656,
+                    387
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8439686894416809,
+                "plate_bbox": [
+                    268,
+                    114,
+                    367,
+                    145
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\5_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\5_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\5_vehicle_1_processed.jpg",
+                "plate_text": "OECR15",
+                "ocr_confidence": 89.8182826278948,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\5_anpr.jpg"
+    },
+    {
+        "image": "6.jpg",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.8969497680664062,
+                "vehicle_bbox": [
+                    141,
+                    181,
+                    557,
+                    368
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8219154477119446,
+                "plate_bbox": [
+                    316,
+                    120,
+                    381,
+                    140
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\6_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\6_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\6_vehicle_1_processed.jpg",
+                "plate_text": "6SL9049",
+                "ocr_confidence": 76.16413439308151,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\6_anpr.jpg"
+    },
+    {
+        "image": "7.jpg",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.9020254015922546,
+                "vehicle_bbox": [
+                    427,
+                    282,
+                    718,
+                    445
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8618665337562561,
+                "plate_bbox": [
+                    200,
+                    115,
+                    239,
+                    139
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\7_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\7_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\7_vehicle_1_processed.jpg",
+                "plate_text": "LLZ407",
+                "ocr_confidence": 66.96437780280279,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 4,
+                "vehicle_class": "truck",
+                "vehicle_confidence": 0.4722200632095337,
+                "vehicle_bbox": [
+                    123,
+                    246,
+                    355,
+                    441
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8655310869216919,
+                "plate_bbox": [
+                    90,
+                    128,
+                    132,
+                    149
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\7_vehicle_4.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\7_vehicle_4_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\7_vehicle_4_processed.jpg",
+                "plate_text": "KSG555",
+                "ocr_confidence": 78.71925479952073,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 6,
+                "vehicle_class": "car",
+                "vehicle_confidence": 0.34174755215644836,
+                "vehicle_bbox": [
+                    122,
+                    245,
+                    354,
+                    441
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8680778741836548,
+                "plate_bbox": [
+                    91,
+                    129,
+                    132,
+                    150
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\7_vehicle_6.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\7_vehicle_6_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\7_vehicle_6_processed.jpg",
+                "plate_text": "MSG555",
+                "ocr_confidence": 61.67880613938771,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\7_anpr.jpg"
+    },
+    {
+        "image": "8.jpg",
+        "status": "Processed",
+        "vehicles": [
+            {
+                "vehicle_id": 1,
+                "vehicle_class": "motorcycle",
+                "vehicle_confidence": 0.7845200896263123,
+                "vehicle_bbox": [
+                    3,
+                    147,
+                    450,
+                    796
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.7447428107261658,
+                "plate_bbox": [
+                    36,
+                    169,
+                    173,
+                    225
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\8_vehicle_1.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\8_vehicle_1_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\8_vehicle_1_processed.jpg",
+                "plate_text": "LU02UOE",
+                "ocr_confidence": 21.925694731432632,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 2,
+                "vehicle_class": "motorcycle",
+                "vehicle_confidence": 0.7840797305107117,
+                "vehicle_bbox": [
+                    423,
+                    133,
+                    777,
+                    808
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.90849769115448,
+                "plate_bbox": [
+                    65,
+                    407,
+                    206,
+                    504
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\8_vehicle_2.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\8_vehicle_2_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\8_vehicle_2_processed.jpg",
+                "plate_text": "XI74MKJ",
+                "ocr_confidence": 96.75815008953744,
+                "status": "Readable",
+                "reason": null
+            },
+            {
+                "vehicle_id": 3,
+                "vehicle_class": "motorcycle",
+                "vehicle_confidence": 0.6821641325950623,
+                "vehicle_bbox": [
+                    738,
+                    83,
+                    1260,
+                    857
+                ],
+                "plate_detected": true,
+                "plate_confidence": 0.8981673121452332,
+                "plate_bbox": [
+                    0,
+                    371,
+                    142,
+                    512
+                ],
+                "vehicle_crop": "E:\\ANPR\\backend\\results\\vehicle_crops\\8_vehicle_3.jpg",
+                "plate_crop": "E:\\ANPR\\backend\\results\\plate_crops\\8_vehicle_3_plate.jpg",
+                "processed_plate": "E:\\ANPR\\backend\\results\\processed_plates\\8_vehicle_3_processed.jpg",
+                "plate_text": "T339REL",
+                "ocr_confidence": 97.96075214485802,
+                "status": "Readable",
+                "reason": null
+            }
+        ],
+        "output_image": "E:\\ANPR\\backend\\results\\images\\8_anpr.jpg"
+    }
+]
