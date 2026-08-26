@@ -32,7 +32,7 @@ from app.config import (
     OUTPUT_IMAGES_DIR,
 )
 from app.config import OCR_MIN_CONFIDENCE
-
+from app.anpr.ocr_paddle import PlateOCR
 class ANPRPipeline:
     def __init__(self):
 

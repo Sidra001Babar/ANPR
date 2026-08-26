@@ -35,16 +35,22 @@ def overlay_vehicle_result(
         f"{vehicle['vehicle_class']} "
         f"{vehicle['vehicle_confidence']:.2f}"
     )
+    vehicle_text_size = cv2.getTextSize( 
+        vehicle_label, 
+        cv2.FONT_HERSHEY_SIMPLEX, 
+        font_scale, 
+        font_thickness, 
+    )[0] 
+    vehicle_text_x = ( 
+        x1 + (box_width - vehicle_text_size[0]) // 2 
+    ) 
     cv2.putText(
         output_image,
         vehicle_label,
-        (
-            x1,
-            max(
-                20,
-                y1 - int(35 * font_scale / 0.6),
-            ),
-        ),
+        ( 
+            vehicle_text_x, 
+            y1 + int(25 * font_scale / 0.65), 
+        ), 
         cv2.FONT_HERSHEY_SIMPLEX,
         font_scale,
         (0, 255, 0),
@@ -55,17 +61,24 @@ def overlay_vehicle_result(
     plate_label = (
         f"Plate: {plate_text}"
     )
+    plate_text_size = cv2.getTextSize( 
+        plate_label, 
+        cv2.FONT_HERSHEY_SIMPLEX, 
+        font_scale, 
+        font_thickness, 
+    )[0] 
+ 
+    plate_text_x = ( 
+        x1 + (box_width - plate_text_size[0]) // 2 
+    ) 
 
     cv2.putText(
         output_image,
         plate_label,
-        (
-            x1,
-            max(
-                20,
-                y1 - int(10 * font_scale / 0.65),
-            ),
-        ),
+        ( 
+            plate_text_x, 
+            y1 + int(50 * font_scale / 0.65), 
+        ), 
         cv2.FONT_HERSHEY_SIMPLEX,
         font_scale,
         (0, 255, 255),
