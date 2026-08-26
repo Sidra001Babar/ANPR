@@ -29,65 +29,100 @@ The system is designed as a modular backend so that each stage of the ANPR proce
 ## Workflow
 
 ```text
-                         Input Image
-                              │
-                              ▼
-                  ┌─────────────────────┐
-                  │ Vehicle Detection   │
-                  │       YOLOv8        │
-                  └──────────┬──────────┘
-                             │
-                             ▼
-                       Vehicle Crop
-                             │
-                             ▼
-                  ┌─────────────────────┐
-                  │ Plate Detection     │
-                  │      Roboflow       │
-                  └──────────┬──────────┘
-                             │
-                    Plate Detected?
-                       ┌─────┴─────┐
-                       │           │
-                      NO          YES
-                       │           │
-                       ▼           ▼
-                    Ignore     Plate Crop
-                    Vehicle        │
-                                   ▼
-                         Image Preprocessing
-                                   │
-                     ┌─────────────┼─────────────┐
-                     │             │             │
-                  Resize        Grayscale      CLAHE
-                     │             │             │
-                     └─────────────┼─────────────┘
-                                   │
-                         Sharpening / OTSU /
-                         Adaptive Threshold
+                                                      Input Image
                                    │
                                    ▼
-                              EasyOCR
-                                   │
-                                   ▼
-                         Multiple OCR Results
-                                   │
-                                   ▼
-                         Candidate Scoring
-                                   │
-                                   ▼
-                         Final Plate Number
-                                   │
-                         ┌─────────┴─────────┐
-                         │                   │
-                     Readable            Unreadable
-                         │                   │
-                         └─────────┬─────────┘
-                                   ▼
-                         Visualization
-                                   │
-                                   ▼
-                         JSON + Output Image
+                       ┌─────────────────────┐
+                       │  Vehicle Detection   │
+                       │       YOLOv8         │
+                       └──────────┬───────────┘
+                                  │
+                                  ▼
+                            Vehicle Crop
+                                  │
+                                  ▼
+                       ┌─────────────────────┐
+                       │  Plate Detection     │
+                       │      Roboflow        │
+                       └──────────┬───────────┘
+                                  │
+                         Plate Detected?
+                            ┌─────┴─────┐
+                            │           │
+                           NO          YES
+                            │           │
+                            ▼           ▼
+                        Ignore       Plate Crop
+                        Vehicle          │
+                                         ▼
+                              Image Preprocessing
+                                         │
+                       ┌─────────────────┼─────────────────┐
+                       │                 │                 │
+                    Resize          Grayscale           CLAHE
+                       │                 │                 │
+                       └─────────────────┼─────────────────┘
+                                         │
+                              Sharpening / OTSU /
+                              Adaptive Threshold
+                                         │
+                                         ▼
+                        Convert grayscale variants
+                             back to 3-channel BGR
+                        (required only for PaddleOCR)
+                                         │
+                                         ▼
+                ╔════════════════════════════════════════╗
+                ║           OCR ENGINE IN USE              ║
+                ║                                          ║
+                ║   ❌ EasyOCR   →  REPLACED, NOT USED     ║
+                ║      (used in your OLD ocr.py — kept     ║
+                ║       in the project as a fallback file  ║
+                ║       only, not called by the pipeline)  ║
+                ║                                          ║
+                ║   ✅ PaddleOCR →  ACTIVE ENGINE           ║
+                ║      (ocr_paddle.py — this is what       ║
+                ║       pipeline.py now imports and runs)  ║
+                ║      use_textline_orientation=False       ║
+                ║      enable_mkldnn=False                 ║
+                ╚════════════════════════════════════════╝
+                                         │
+                                         ▼
+                          Run PaddleOCR on every variant
+                        (resized, gray, clahe, sharpened,
+                              otsu, adaptive)
+                                         │
+                                         ▼
+                          Multiple OCR Candidates
+                        (text + confidence per variant)
+                                         │
+                                         ▼
+                              Candidate Scoring
+                        (confidence + consistency +
+                          frequency + length score)
+                                         │
+                                         ▼
+                             Final Plate Number
+                                         │
+                          Confidence ≥ OCR_MIN_CONFIDENCE?
+                            ┌────────────┴────────────┐
+                            │                         │
+                           YES                        NO
+                            │                         │
+                            ▼                         ▼
+                        Readable                 Unreadable
+                            │                         │
+                            └────────────┬────────────┘
+                                         ▼
+                                  Visualization
+                            (bounding box + plate label
+                                  on output image)
+                                         │
+                                         ▼
+                             JSON + Output Image
+                        (vehicle_crop, plate_crop,
+                          processed_plate, plate_text,
+                             ocr_confidence, status)
 
 ```
 ## Reasons Why a Plate Can Be Marked as "Unreadable"
